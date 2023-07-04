@@ -1,0 +1,7 @@
+.wrapper {
+  @apply flex items-center;
+
+  .icon {
+    @apply w-6 h-6 text-red-500;
+  }
+}
