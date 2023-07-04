@@ -1,0 +1,7 @@
+.wrapper {
+  @apply relative aspect-square shadow-lg;
+
+  .favourite {
+    @apply absolute w-full bg-white bg-opacity-25 bottom-0 h-16 flex items-center justify-center;
+  }
+}
