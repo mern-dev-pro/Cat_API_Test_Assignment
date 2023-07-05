@@ -1,0 +1,7 @@
+.wrapper {
+  @apply flex items-center justify-start gap-3;
+
+  .link {
+    @apply text-green-400 hover:text-green-600 font-semibold;
+  }
+}

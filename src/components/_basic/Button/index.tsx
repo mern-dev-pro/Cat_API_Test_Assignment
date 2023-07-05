@@ -9,14 +9,20 @@ type ButtonProps = {
   className?: string;
   Icon?: React.ElementType;
   isLoading?: boolean;
+  onClick?: VoidFunction;
 };
 
-const Button: React.FC<ButtonProps> = ({ label, className, Icon, isLoading }) => {
+const Button: React.FC<ButtonProps> = ({ label, className, Icon, isLoading, onClick = () => {} }) => {
   return (
-    <button className={classnames(styles.wrapper, className)}>
-      {!!Icon && <Icon className={styles.icon} />}
-      {label}
-      {isLoading && <ScaleLoader height={15} width={3} color="white" className="ml-1" />}
+    <button className={classnames(styles.wrapper, className)} onClick={onClick}>
+      {isLoading ? (
+        <ScaleLoader height={15} width={2.5} color="white" className="ml-1" />
+      ) : (
+        <>
+          {!!Icon && <Icon className={styles.icon} />}
+          {label}
+        </>
+      )}
     </button>
   );
 };

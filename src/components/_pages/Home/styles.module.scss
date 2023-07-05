@@ -1,0 +1,20 @@
+.wrapper {
+  @apply py-5;
+
+  .header {
+    @apply bg-green-400 bg-opacity-30 py-4 flex justify-between px-5 rounded-md;
+
+    .heading {
+      @apply text-green-500 font-semibold text-xl; 
+    }
+
+    .button {
+      @apply w-28 bg-green-400 justify-center rounded-md p-2 text-white font-bold; 
+    }
+  }
+
+  .gridList {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-5 py-5;
+
+  }
+}

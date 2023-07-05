@@ -1,0 +1,11 @@
+.wrapper {
+  @apply py-5;
+
+  .header {
+    @apply bg-green-400 bg-opacity-30 py-4 flex justify-end px-5 rounded-md;
+
+    .button {
+      @apply w-28 bg-green-400 justify-center rounded-md p-2 text-white font-bold; 
+    }
+  }
+}
